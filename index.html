@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+
+<script>
+    var heddiv =document.createElement("div");
+    heddiv.classList.add("container","border","px-4");
+    
+
+    var heading = document.createElement("h1");
+    heading.classList.add("text-dark","bg-warning","text-center");
+    heading.innerText="BRAIN DUDEY";
+    heddiv.append(heading);
+
+    var des =document.createElement("p")
+    des.classList.add("text-center")
+    des.innerText="N.Damen Avenue,Chicago 99999 | 999-999-9999 | hellodesk@kickresume.com | www.kickresume.com "
+    heddiv.append(des)
+
+    var row=document.createElement("div")
+    row.classList.add("row")
+
+    var col1=document.createElement("div")
+    col1.classList.add("col-6","border")
+    col1.innerHTML= "<h2>Profile</h2> <br> Innovation optimized solution seeker. Exiceted to be at devlopment phase of my new career as a web devloper I am ambitues,adventures,assiduous,animeted,and an illitration advocate<br><br><h3>Skills</h3>"
+    
+    
+
+    var tech=document.createElement("p")
+    tech.classList.add("text-center")
+    tech.innerHTML="<p class=font-weight-bold>Technical Skills"
+
+    col1.append(tech)
+
+    var skills=document.createElement("p")
+    skills.setAttribute("class","font-weight-lighter ")
+    skills.innerHTML="<p>Javascript <br> CSS <br> HTML <br> React <br> Redux <br> Mongo <br> Deployment</p>"
+        col1.append(skills)
+    
+        var add=document.createElement("p")
+    add.classList.add("text-center")
+    add.innerHTML="<p class=font-weight-bold>Additional Skills"
+
+    col1.append(add)
+    var skills1=document.createElement("p")
+    skills1.setAttribute("class","font-weight-lighter ")
+    skills1.innerHTML="<p>Project Management <br> Recruitment <br> Business Devlopment <br> Editing <br> Fund Rising <br><br><h2>Work Experience</h2></p>"
+    col1.append(skills1)
+    var wdiv=document.createElement("div");
+    wdiv.innerHTML="<p class=font-weight-bold>Event Manager:-03/2014 - 02/2017</p> <p> <br>     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus minus explicabo quibusdam inventore obcaecati iusto enim asperiores deserunt voluptates ullam velit nisi numquam suscipit dolor natus, nobis excepturi laborum corrupti?</p><p>    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus minus explicabo quibusdam inventore obcaecati iusto enim asperiores deserunt voluptates ullam velit nisi numquam suscipit dolor natus, nobis excepturi laborum corrupti?</p>"
+
+
+        col1.append(wdiv)
+    row.append(col1)
+    var col2=document.createElement("div")
+    col2.classList.add("col-6","border")
+    col2.innerHTML= "<h2>Work Experience</h2><p class=font-weight-bold>Community Relation  Manager:-06/2011 - 02/2014 </p><br> <p>    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus minus explicabo quibusdam inventore obcaecati iusto enim asperiores deserunt voluptates ullam velit nisi numquam suscipit dolor natus, nobis excepturi laborum corrupti?</p><p>    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus minus explicabo quibusdam inventore obcaecati iusto </p>"
+    row.append(col2)
+    var edu=document.createElement("div")
+    edu.innerHTML="<h2>Education</h2> <br>"
+    col2.append(edu)
+    var edudet=document.createElement("div")
+    edudet.innerHTML="<p class=font-weight-bold>Engineering Immersion program  11/2018`-06/2018</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae dolore, quia laudantium nesciunt eveniet esse doloremque sapiente maiores perspiciatis enim delectus debitis amet sed mollitia, exercitationem asperiores odit alias.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae dolore, quia laudantium nesciunt eveniet esse doloremque sapiente maiores perspiciatis enim delectus debitis amet sed mollitia, exercitationem asperiores odit alias</p> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quae totam excepturi accusamus! Impedit id totam omnis similique, sequi ad maxime, eveniet tempora eius eos, dicta quo soluta cum hic.</p>"
+    col2.append(edudet)
+    // row.append(col2)
+    var edu1=document.createElement("div")
+    edu1.innerHTML="<p class=font-weight-bold>BA,English: 09/2009-09/2005"
+        col2.append(edu1)
+    heddiv.append(row)
+    document.body.append(heddiv);
+
+    
+</script>
+</body>
+</html>
